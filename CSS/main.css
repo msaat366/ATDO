@@ -39,6 +39,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   padding-bottom: 3rem;
+  min-height: 100vh;
 }
 
 .header-media {
