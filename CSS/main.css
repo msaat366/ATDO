@@ -296,6 +296,7 @@ p {
 }
 
 .previous, .next {
+  display: none;
   padding: 1rem 1.9rem;
 }
 

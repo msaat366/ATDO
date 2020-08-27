@@ -16,7 +16,7 @@ let slideIndex = 1;
 function next_previous(n) {
   
   showDivs(slideIndex += n);
-  handleDisabled( slideIndex += n);
+  //handleDisabled( slideIndex += n);
 
 }
 
