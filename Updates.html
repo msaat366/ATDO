@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS\main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS\main.css">
     <title>Among The Dead Ones</title>
 </head>
 <body>
@@ -13,7 +13,10 @@
         <div class="container">
             <div class="nav-left">
                 <div class="nav-item">
-                    <img class="logo" src="media\atdo_logo.png" alt="Dead Matter"  >
+                    <img class="logo" src="media\atdo_logo.png" alt="Among The Dead Ones"  >
+                    <span class="nav-logo-mob">
+                        ATDO
+                   </span>
                 </div>
             </div>
             
@@ -38,12 +41,103 @@
             </div>
         </div>
     </div>
-    </nav>
-    <div class="header">
-        <div class="container">
-           
+</nav>
+<div class="header-updates">
+    <div class="container">
+        <div class="header-title">
+            Upcoming & Latest Updates 
+        </div>
+        <div class="update-container">
+            <div class="update-post">
+                <div class="update-title">
+                    <div>october 2020 - upcoming update</div>
+                </div>
+            </div>
+            <div class="update-post">
+                <div class="update-title">
+                    <div>october 2020 - upcoming update</div>
+                </div>
+                <p>
+                    Lately i've been doing some experiments, and i think i'm in a comfortable position where i can just focus on using the tools that i have to make updates to the game, rather then making updates to the tools that i have so i can make updates to the game, you feel me? lol.
+                </p> 
+                <p>   
+                    In the October Update, i plan on adding NPCs and Full-Fledged Quests with a powerful Dialogue System that'll make interacting with the NPCs a good time, indeed.
+                </p>
+                
+                <p>
+                    I'm adding a Brand-New Jigsaw style inventory system (think RE4) where you can Store items within items, and combine items in cool ways, as well as craft items.
+                </p>
+                
+                <p>    
+                    Doubling Down on Survival mechanics in this update as well; You can get infected, you can become starving and dehydrated, you can freeze to death (New Mexico is very cold at night) and have Heatstroke
+                </p>
+                
+                <p>
+                    I'm also adding wildlife. You can hunt for animals! Take their meat and cook it, or take their hide and craft clothes etc. There will be wildlife that you need to keep a watch from, like mountain lions and snakes.
+                </p>
+                
+                <p>
+                   Maybe the ability to build structures? I'm not too sure about this, because i want it to be in a realistic sense, not just point, click and the structure is built. Would like a realistic interactive way of doing it, but i'm not too sure about this tbh.
+                </p> 
+                
+                <p>           
+                   Multiplayer Mode?: Maybe! I recently found a solution that supports Peer 2 Peer multiplayer on Android, which means you'll be able to Host and Join servers! If i we're to add this, however, it would be VERY Experimental! But i'm definitely looking into it, and who knows? maybe you might see a working multiplayer mode in this Update.
+                </p> 
+                
+                <p>
+                    The Main NPC Town Hub: This is the Main Hub where you start out in.
+                    This is where you'll be getting Quests from NPCs, Spending your credits at Vendors, and chilling at your house. However, you don't start off with a house. You have to earn one. Do enough quests, and you'll earn enough credits to purchase one.
+                </p>
+                
+                <p>
+                    But that's pretty much it for this update, so let's recap:
+                </p> 
+                
+                <p> 
+                    <b>
+                        UPCOMING OCTOBER UPDATE
+                    </b>
+                </p> 
+                <p>
+                    -NPCs <br>
+                    -Quests <br>
+                    -Dialogue System <br>
+                    -Main Hub with Vendors, Quests and the player's home <br>
+                    -Small town to explore, just across the highway <br>
+                    -New Jigsaw Style Inventory <br>
+                    -Realistic Survival Mechanics <br>
+                    -Wildlife and Hunting <br>
+                    -Lots of Loot <br>
+                    -Simple Structure building mechanic (for now) <br>
+                    -MAYBE Multiplayer lol who knows! <br>
+                </p>
+            </div>
         </div>
     </div>
+        <div class="previous-next">
+            <div class="previous" onclick="next_previous(1)"><i class="fas fa-arrow-left"> </i> <b>PREVIOUS</b></div>
+            <div class="next" onclick="next_previous(-1)"><b>NEXT</b> <i class="fas fa-arrow-right"></i></div>
+        </div>
+        <div style="text-align: center; cursor: pointer; font-size: 1rem;" onclick="latestpost()"> Show latest Update</div>
+    </div>
+    <footer class="footer">
+        <div class="footer-top">
+          <p>Among The Dead Ones.</p>
+          <p>&copy; COPYRIGHT 2020 | ALL RIGHTS RESERVED</p>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-item">
+            <a href="" target="_blank"><i class="fab fa-twitter-square"></i></a>
+          </div>
+          <div class="footer-item">
+            <a href="" target="_blank"><i class="fab fa-youtube-square"></i></a>
+          </div>
+          <div class="footer-item">
+            <a href="" target="_blank"><i class="fab fa-discord"></i></a>
+          </div>
+        </div>
+      </footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
