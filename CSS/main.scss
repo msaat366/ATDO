@@ -28,12 +28,13 @@ body {
         .header-home{
             background-image: linear-gradient( rgba(17, 17, 17, 0.7) ,rgba(17, 17, 17, 0.7)), url("bg-home.png");
            @include bg;
+           min-height: 40vh;
         }
 
         .header-about{
             background-image: linear-gradient( rgba(17, 17, 17, 0.7) ,rgba(17, 17, 17, 0.7)), url("bg-about.jpg");
             @include bg;
-            min-height: 100vh;
+            min-height: 88vh;
         }
 
         .header-media{
@@ -44,6 +45,7 @@ body {
         .header-updates{
             background-image: linear-gradient( rgba(17, 17, 17, 0.7) ,rgba(17, 17, 17, 0.7)), url("bg-updates.jpg");
             @include bg;
+            min-height: 88vh;
         }
         .container{
             max-width: 1200px;
@@ -238,7 +240,6 @@ body {
             }
         }
         .footer{
-            position: relative;
            background: #111111;
            padding: 2em 1em;
         }

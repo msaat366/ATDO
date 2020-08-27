@@ -29,6 +29,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   padding-bottom: 3rem;
+  min-height: 40vh;
 }
 
 .header-about {
@@ -39,7 +40,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   padding-bottom: 3rem;
-  min-height: 100vh;
+  min-height: 88vh;
 }
 
 .header-media {
@@ -60,6 +61,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   padding-bottom: 3rem;
+  min-height: 88vh;
 }
 
 .container {
@@ -306,7 +308,6 @@ p {
 }
 
 .footer {
-  position: relative;
   background: #111111;
   padding: 2em 1em;
 }
